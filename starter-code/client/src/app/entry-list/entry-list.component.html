@@ -1,0 +1,11 @@
+<p>
+  entry-list works!
+</p>
+
+    <ul *ngFor="let item of data">
+
+      <li>
+         Title = {{ item.title | json }}, Date = {{ item.date | json }}
+         <a [routerLink]="['item', item._id]">details</a>
+       </li>
+    </ul>
